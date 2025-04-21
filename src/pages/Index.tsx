@@ -26,7 +26,7 @@ const Index = () => {
       <footer className="mt-10 py-6 bg-gray-100">
         <div className="max-w-4xl mx-auto px-4 text-center text-sm text-gray-500">
           <p>SmartWeather combines data from multiple APIs with ML models for accurate rainfall predictions.</p>
-          <p className="mt-2">© 2025 SmartWeather - Weather data is for demonstration purposes only</p>
+          <p className="mt-2">© 2025 SmartWeather - Powered by OpenWeather API and machine learning</p>
         </div>
       </footer>
     </div>
