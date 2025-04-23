@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { MapPin, AlertTriangle, Sun, ArrowDown, Thermometer, HeatWave } from "lucide-react";
+import { MapPin, AlertTriangle, Sun, ArrowDown, Thermometer, ThermometerSun } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -133,7 +133,7 @@ export const WeatherDashboard = () => {
 
         {weatherData && weatherData.forecast[0]?.highTemp > 40 && (
           <div className="flex items-center gap-2 bg-gradient-to-l from-orange-200 to-red-300 border border-orange-300 rounded-lg px-4 py-2 animate-pulse shadow-lg">
-            <HeatWave className="h-6 w-6 text-orange-500 animate-pulse" />
+            <ThermometerSun className="h-6 w-6 text-orange-500 animate-pulse" />
             <p className="text-sm font-semibold text-orange-800">
               Possible Heatwave Warning: {weatherData.forecast[0]?.highTemp}°C today! Hydrate regularly.
             </p>
